@@ -3,27 +3,42 @@
 // Favorite Food Game//
 
 <script type="text/javascript">
-//Try and guess my favorite food.//
-//Variables and inputs.//
-  var guess_1, guess_2, answer, message;
-  answer = ("PIZZA")
+//Try and guess my favorite food and how often I eat it.//
+//Variables and Inputs.//
+// "t" stands for type and "a" stands for age.
+  var guess_1, guess_2, guess_3, answer_a, answer_t, message;
+  answer_t = ("PIZZA")
+  answer_a = 27
 
 
-//Guess 1 - basic if statement//
+//Food type Guess 1  - basic if statement//
   guess_1 = prompt("Hey! Lunch time. What's my favorite food?");
-  if (guess_1.toUpperCase() == answer) {
-    message = "Wow you are good! You win.";
+  if (guess_1.toUpperCase() == answer_t
+) {
+    message = "Wow you are good!";
 
-//Guess 2 - which is placed inside the esle statement //
+//Food Type Guess 2 - which is placed inside the esle statement //
   } else {guess_2 = prompt("Try again! I'\ll give you a hint. It\'s round.");
-      if (guess_2.toUpperCase() == answer){
-      message = "Yay, you got it! You win!";
+      if (guess_2.toUpperCase() == answer_t
+    ){
+      message = "Yay, you got it!";
       }
       else{
-      message = "Nope, sorry. Game over. I'm hungry, and I want my pizza...";
+      message = "Nope, sorry. It was pizza.";
       }
   }
+  alert(message);
 
+  // My age Guess//
+guess_3 = prompt("Now guess how old I am!")
+if (guess_3 < answer_a){
+  message = "Wrong! Not all pizza is served at Chuck e Cheese! Game over, no pizza for you.";
+} else if (guess_3 == answer_a){
+  message = "Great Job! Pizza is for all ages! Want some pizza?";
+}
+else{
+  message= "Wrong. Pizza and dentures don\'t really work. Sorry, game over."
+}
   alert(message);
 
 </script>
