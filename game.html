@@ -1,0 +1,29 @@
+// Zach Gordon //
+// 5_11_2015 //
+// Favorite Food Game//
+
+<script type="text/javascript">
+//Try and guess my favorite food.//
+//Variables and inputs.//
+  var guess_1, guess_2, answer, message;
+  answer = ("PIZZA")
+
+
+//Guess 1 - basic if statement//
+  guess_1 = prompt("Hey! Lunch time. What's my favorite food?");
+  if (guess_1.toUpperCase() == answer) {
+    message = "Wow you are good! You win.";
+
+//Guess 2 - which is placed inside the esle statement //
+  } else {guess_2 = prompt("Try again! I'\ll give you a hint. It\'s round.");
+      if (guess_2.toUpperCase() == answer){
+      message = "Yay, you got it! You win!";
+      }
+      else{
+      message = "Nope, sorry. Game over. I'm hungry, and I want my pizza...";
+      }
+  }
+
+  alert(message);
+
+</script>
