@@ -8,6 +8,7 @@ The first part has two if/else statements and asks what my favorite food is with
 
 The second part uses one if/else statement. Prompt asks the user to guess my age. If below 27, a "wrong" prompt is displayed and game over. If guessed correct a "winning" prompt appears, game over. Finally if guessed above 27 a "wrong" prompt is displayed and game over.
 
+The third part of the game asks the user to guess what city I am from.  An incorrect answer produces one answer, while the correct answer produces a sarcastic response
 Format below.
 
 Part 1
@@ -27,3 +28,8 @@ else (wrong)
 Game ends
 
 Answer is pizza.
+
+Part 3
+Guess a home city
+If correct receive the message "Best city ever"
+Otherwise: The force is not strong with you
